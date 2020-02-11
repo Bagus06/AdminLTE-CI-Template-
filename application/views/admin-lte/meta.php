@@ -4,7 +4,8 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Admin-LTE - Codeigneter Template (ENVY Groups)</title>
+<title>ADCS | Asset Data Collection System</title>
+<link rel="icon" href="<?php echo base_url(); ?>assets/images/ADCSLogo.png">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css">
 <!-- Ionicons -->
 <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">

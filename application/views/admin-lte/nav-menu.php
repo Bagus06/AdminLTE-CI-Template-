@@ -13,46 +13,7 @@
   <ul class="navbar-nav ml-auto">
     <!-- Messages Dropdown Menu -->
     <li class="nav-item dropdown">
-      <a class="nav-link" data-toggle="dropdown" href="#">
-        <i class="far fa-user"></i>
-      </a>
-      <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-        <a href="#" class="dropdown-item">
-          <div class="media">
-            <img src="<?php echo base_url(); ?>assets/images/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-            <div class="media-body">
-              <h2 class="dropdown-item-title" style="padding-top: 10%">
-                <strong>
-                  Brad Diesel
-                </strong>
-              </h2>
-            </div>
-          </div>
-        </a>
-        <div class="dropdown-divider"></div>
-        <a href="#" class="dropdown-item">
-          <div class="media">
-            <i class="fas fa-user-cog"></i>
-            <div class="media-body">
-              <h3 class="dropdown-item-title" style="padding-left: 5px">
-                Profil
-              </h3>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="dropdown-item">
-          <div class="media">
-            <i class="fas fa-cogs"></i>
-            <div class="media-body">
-              <h3 class="dropdown-item-title" style="padding-left: 5px">
-                Edit Profil
-              </h3>
-            </div>
-          </div>
-        </a>
-        <div class="dropdown-divider"></div>
-        <a href="<?php echo base_url('logout') ?>" class="dropdown-item dropdown-footer">Log out</a>
-      </div>
+      <a data-toggle="modal" data-target="#logoutModal" href="#" class="dropdown-item dropdown-footer"><i style="color: red" class="fas fa-power-off fa-lg"></i></a>
     </li>
   </ul>
 </nav>

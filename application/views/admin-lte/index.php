@@ -14,9 +14,9 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="<?php echo base_url(); ?>" class="brand-link">
-        <img src="<?php echo base_url(); ?>assets/images/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+        <img src="<?php echo base_url(); ?>assets/images/ADCSLogo.png" alt="AdminLTE Logo" class="brand-image elevation-3"
         style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <span class="brand-text font-weight-light">ADC Sys</span>
       </a>
 
       <!-- Sidebar -->
@@ -27,7 +27,7 @@
             <img src="<?php echo base_url(); ?>assets/images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">Alexander Pierce</a>
+            <a href="#" class="d-block">Admin</a>
           </div>
         </div>
 
@@ -51,12 +51,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
+            <h1 class="m-0 text-dark"><?php echo $this->uri->rsegments[1]; ?></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url() . $this->uri->rsegments[1]; ?>"><?php echo $this->uri->rsegments[1]; ?></a></li>
+              <li class="breadcrumb-item active"><?php echo $this->uri->rsegments[2]; ?></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -77,8 +77,8 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2019 <a href="#">Envy Group</a>.</strong>
-    All rights reserved.
+    <strong>Copyright &copy; 2020 <a href="http://smkn1bangsri.sch.id/">ESKASABA</a>.</strong>
+    Beta Version.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 1.0
     </div>
@@ -89,6 +89,25 @@
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
+</div>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Anda yakin untuk logout?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">Pilih "Logout" untuk keluarkan akun.</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+        <a class="btn btn-primary" href="<?php echo base_url('logout') ?>">Logout</a>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- ./wrapper -->
 <?php $this->load->view('admin-lte/js') ?>

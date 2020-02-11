@@ -8,6 +8,9 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="<?php echo base_url(); ?>assets/vendor/datatables/jquery.dataTables.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendor/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 <!-- ChartJS -->
 <script src="<?php echo base_url(); ?>assets/vendor/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
@@ -29,3 +32,16 @@
 <script src="<?php echo base_url(); ?>assets/js/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url(); ?>assets/js/demo.js"></script>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+    });
+  });
+</script>
